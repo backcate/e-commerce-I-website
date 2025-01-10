@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/custom css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom css/responsive.css">
+    <title>BACKcate</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg cust_won fixed-top container-lg mt-lg-4">
+            <div class="container-lg power-z">
+                <!-- == navbar logo == -->
+                <a class="navbar-brand" href="#">BACKcate</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> <!-- slide_des use inside the class when i work to slide menu 991px res. -->
+                    <div class="offcanvas-header close-cart">
+                        <span class="offcanvas-title" id="offcanvasNavbarLabel">BACKcate</span>
+                        <button type="button" class="close-btn" data-bs-dismiss="offcanvas" onclick="closeNav()" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item drop_down">
+                                <a class="nav-link gather active" aria-current="page" href="#">Home
+                                    <span class="fa-solid fa-chevron-down sub-menu-icon"></span>
+                                </a>
+                                <ul class="dropdown-sub-menu">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                    <li><a href="#">Home 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item drop_down">
+                                <a class="nav-link gather active" aria-current="page" href="#">Shop
+                                    <span class="fa-solid fa-chevron-down sub-menu-icon"></span>
+                                </a>
+                                <ul class="dropdown-sub-menu sub-menu">
+                                    <li>
+                                        <ul class="sub-menu-sub">
+                                            <li>
+                                                <ul>
+                                                    <li class="sub-menu-head"><a href="#">Shop Grid</a></li>
+                                                    <li><a href="#">Shop Grid 3 Column</a></li>
+                                                    <li><a href="#">Shop Grid 4 Column</a></li>
+                                                    <li><a href="#">Shop Grid Left Sidebar</a></li>
+                                                    <li><a href="#">Shop Grid Right Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="sub-menu-head"><a href="#">Shop List</a></li>
+                                                    <li><a href="#">Shop List</a></li>
+                                                    <li><a href="#">Shop List Left Sidebar</a></li>
+                                                    <li><a href="#">Shop List Right Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="sub-menu-head"><a href="#">Shop Single</a></li>
+                                                    <li><a href="#">Shop Single</a></li>
+                                                    <li><a href="#">Shop Variable</a></li>
+                                                    <li><a href="#">Shop Affiliate</a></li>
+                                                    <li><a href="#">Shop Group</a></li>
+                                                    <li><a href="#">Shop Tab 2</a></li>
+                                                    <li><a href="#">Shop Tab 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul>
+                                                    <li class="sub-menu-head"><a href="#">Shop Single</a></li>
+                                                    <li><a href="#">Shop Slider</a></li>
+                                                    <li><a href="#">Shop Gallery Left</a></li>
+                                                    <li><a href="#">Shop Gallery Right</a></li>
+                                                    <li><a href="#">Shop Sticky Left</a></li>
+                                                    <li><a href="#">Shop Sticky Right</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="images">
+                                        <ul class="dropdown-image d-flex">
+                                            <li class="image-area">
+                                                <a href=""><img src="assets/image/menu-img/banner-menu2.jpg" alt="" /></a>
+                                            </li>
+                                            <li class="image-area">
+                                                <a href=""><img src="assets/image/menu-img/banner-menu3.jpg" alt="" /></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item drop_down">
+                                <a class="nav-link gather active" aria-current="page" href="#">Pages
+                                    <span class="fa-solid fa-chevron-down sub-menu-icon"></span>
+                                </a>
+                                <ul class="dropdown-sub-menu">
+                                    <li><a href="#">About Page</a></li>
+                                    <li><a href="#">Cart Page</a></li>
+                                    <li><a href="#">Checkout Page</a></li>
+                                    <li><a href="#">Compare Page</a></li>
+                                    <li><a href="#">Login & Register Page</a></li>
+                                    <li><a href="#">Account Page</a></li>
+                                    <li><a href="#">Wishlist Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item drop_down">
+                                <a class="nav-link gather active" aria-current="page" href="#">Blog
+                                    <span class="fa-solid fa-chevron-down sub-menu-icon"></span>
+                                </a>
+                                <ul class="dropdown-sub-menu">
+                                    <li class="nav-item drop_down">
+                                        <a href="#">Blog Grid</a>
+                                        <ul class="sub-dropdown-sub-menu">
+                                            <li><a href="#">Blog Grid Left Sidebar</a></li>
+                                            <li><a href="#">Blog Grid Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item drop_down">
+                                        <a href="#">Blog List</a>
+                                        <ul class="sub-dropdown-sub-menu">
+                                            <li><a href="#">Blog List Left Sidebar</a></li>
+                                            <li><a href="#">Blog List Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item drop_down">
+                                        <a href="#">Blog Single</a>
+                                        <ul class="sub-dropdown-sub-menu">
+                                            <li><a href="#">Blog Single Left Sidebar</a></li>
+                                            <li><a href="#">Blog Single Right Sidbar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link gather active" aria-current="page" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- contact link -->
+                <div class="contact-link d-flex">
+                    <div class="curvice-image">
+                        <img src="assets/image/survice/survice.png" alt="">
+                    </div>
+                    <div class="phone">
+                        <p>Call Us:</p>
+                        <a href="#">(+880)845735</a>
+                    </div>
+                </div>
+                <!-- == cart area-1 == -->
+                <div class="cart-info">
+                    <a href="#" class="cart_in" data-number="3">
+                        <span class="fa-solid fa-shuffle ico-cart"></span>
+                        <!-- after before -->
+                    </a>
+                    <!-- heart_cart -->
+                    <a href="#" class="cart_in" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" data-number="3">
+                        <span class="fa-regular fa-heart ico-cart"></span>
+                    </a>
+                    <!-- shopping_cart -->
+                    <a href="#" class="cart_in" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions" data-number="3">
+                        <span class="fa-solid fa-cart-shopping ico-cart"></span>
+                        <span class="currency">$20.00</span>
+                    </a>
+                </div>
+                <!-- == mobile manu == -->
+                <button class="menu d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" onclick="openNav()" aria-label="Main Menu">
+                    <svg class="nav-icon" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+                        <path class="line line2" d="M 20,50 H 80"/>
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- navbar drawer -->
+            <div class="navbar_drawer container-lg">
+                <div class="inner-drawer lengthen">
+                    <div class="d-flex justify-content-between lengthen">
+                        <div class="search">
+                            <form action="" class="search_all d-flex">
+                                <div class="search-category">
+                                    <select class="select_option" name="" id="">
+                                        <option value="0">All categories</option>
+                                        <option value="1">Laptop</option>
+                                        <option value="2">Computer</option>
+                                        <option value="3">Smartphone</option>
+                                        <option value="4">Game Consoles</option>
+                                        <option value="5">Watches</option>
+                                        <option value="6">Mp3 & headphone</option>
+                                        <option value="7">Camera</option>
+                                        <option value="8">Accessories</option>
+                                    </select>
+                                </div>
+                                <input type="text" placeholder="Enter your search key ... ">
+                                <button class="cust_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="header-menu-nav">
+                            <ul class="menu-nav d-flex">
+                                <li>
+                                    <div class="menu-nav-dropdown dropdown-container">
+                                        <button class="dropdown-button" onclick="toggleDropdown(event)">Setting</button>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">My account</a>
+                                            <a href="#" class="dropdown-item">Checkout</a>
+                                            <a href="#" class="dropdown-item">Sign in</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-nav-dropdown dropdown-container">
+                                        <button class="dropdown-button" onclick="toggleDropdown(event)">USD $</button>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">EUR €</a>
+                                            <a href="#" class="dropdown-item">USD $</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="op-b">
+                                    <div class="menu-nav-dropdown dropdown-container">
+                                        <button class="dropdown-button" onclick="toggleDropdown(event)"><img src="assets/image/flag/1.jpg" alt="flag"> English</button>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item"><img src="assets/image/flag/1.jpg" alt="flag"> English</a>
+                                            <a href="#" class="dropdown-item"><img src="assets/image/flag/2.jpg" alt=""> Français</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu-icon">
+                    <span class="fa-solid fa-chevron-down logic-show"></span>
+                    <span class="fa-solid fa-chevron-up logic-hide"></span>
+                </div>
+            </div>
+            <!-- blur layer -->
+            <div class="blur_layer container-lg"></div>
+        </nav>
+    </header>
+
+    <!-- cart area-2 -->
+    <div>
+        <!-- == cart * heart_cart == -->
+        <div class="offcanvas offcanvas-end slide_des" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header close-cart">
+                <span class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Wishlist</span>
+                <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="long-go m-0">
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Walnut Cutting Board</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$100.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Lucky Wooden Elephant</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$35.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Fish Cut Out Set</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$9.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="foot p-0">
+                    <div class="buttons">
+                        <a href="#" class="btn tons">view wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- == cart * shopping_cart == -->
+        <div class="offcanvas offcanvas-end slide_des" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header close-cart">
+                <span class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart</span>
+                <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="long-go">
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Walnut Cutting Board</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$100.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Lucky Wooden Elephant</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$35.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="image">
+                            <img src="assets/image/cart/1.jpg" alt="">
+                        </a>
+                        <div class="content-cart">
+                            <a class="title-cart" href="#">Fish Cut Out Set</a>
+                            <span class="cart-price">
+                                1 x 
+                                <span class="amount">$9.00</span>
+                            </span>
+                            <a href="#" class="remove">×</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="foot p-0">
+                    <div class="sub-total">
+                        <strong>Subtotal :</strong>
+                        <span class="amount">$144.00</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn tons">view cart</a>
+                        <a href="#" class="btn tons-1 ">checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/custom js/custom jquery.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/custom js/custom.js"></script>
+    
+</body>
+</html>
