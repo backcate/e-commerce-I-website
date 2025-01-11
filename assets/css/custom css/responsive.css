@@ -1,5 +1,53 @@
 /* ==== 991px ==== */
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    /* ==================== header ==================== */
+    .offcanvas.offcanvas-start {
+        padding: 50px 40px;
+    }
+    .close-cart {
+        margin-bottom: 25px;
+    }
+    /* offcanvas menu search form */
+    .offcanvas-menu-search-form {
+        display: block;
+    }
+    .offcanvas-body {
+        padding: 0px;
+    }
+    .offcanvas-body .navbar-nav .nav-item.drop_down {
+        line-height: 28px;
+    }
+    .offcanvas-body .navbar-nav li a {
+        font-weight: 400;
+        color: #7e7e7e !important;
+    }
+    .offcanvas-body .navbar-nav li a .sub-menu-icon {
+        display: none;
+    }
+    .menu-expand {
+        display: block;
+    }
+    /* Dropdown 2 */
+    .dropdown-sub-menu {
+        position: inherit;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        box-shadow: none;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .dropdown-sub-menu li {
+        border-bottom: none;
+    }
+    .dropdown-sub-menu li:hover > a {
+        color: #146cda !important;
+        padding-left: 0;
+    }
+}
 /* ====  ==== */
 @media (max-width: px) {}
 /* ====  ==== */
