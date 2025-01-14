@@ -253,7 +253,7 @@ body {
 .offcanvas-body ul li .menu-expand {
     position: absolute;
     z-index: 2;
-    top: 0;
+    /* top: 0; */
     right: 0;
     width: 24px;
     height: 44px;
@@ -280,28 +280,28 @@ body {
     -ms-transform: scale(0.75);
     -o-transform: scale(0.75);
 }
-/* .offcanvas-body > ul > li .menu-expand::after {
+.offcanvas-body > ul > li .menu-expand::after {
     transform: rotate(90deg) scale(0.75);
     -webkit-transform: rotate(90deg) scale(0.75);
     -moz-transform: rotate(90deg) scale(0.75);
     -ms-transform: rotate(90deg) scale(0.75);
     -o-transform: rotate(90deg) scale(0.75);
-} */
+}
 
-/* .offcanvas-body > ul > li.active > .menu-expand::after {
+.offcanvas-body > ul > li.active > .menu-expand::after {
     transform: rotate(0) scale(0.75);
     -webkit-transform: rotate(0) scale(0.75);
     -moz-transform: rotate(0) scale(0.75);
     -ms-transform: rotate(0) scale(0.75);
     -o-transform: rotate(0) scale(0.75);
-} */
-/* .offcanvas-body > ul > li .dropdown-sub-menu li.active>.menu-expand::after {
+}
+.offcanvas-body > ul > li .dropdown-sub-menu li.active > .menu-expand::after {
     transform: rotate(0) scale(0.75);
     -webkit-transform: rotate(0) scale(0.75);
     -moz-transform: rotate(0) scale(0.75);
     -ms-transform: rotate(0) scale(0.75);
     -o-transform: rotate(0) scale(0.75);
-} */
+}
 .menu {
     background-color: transparent;
     border: none;
@@ -407,6 +407,9 @@ span.sub-menu-icon {
     width: 100%;
     padding: 0px 0px;
     overflow: hidden;
+}
+.sub-menu-sub-line_2 {
+    display: none;
 }
 .sub-menu li.images {
     width: 100%;

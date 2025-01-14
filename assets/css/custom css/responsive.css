@@ -21,6 +21,13 @@
         font-weight: 400;
         color: #7e7e7e !important;
     }
+    .offcanvas-body .navbar-nav li:hover > a {
+        color: #146cda !important;
+    }
+    .offcanvas-body .navbar-nav li:hover > .menu-expand::after,
+    .offcanvas-body .navbar-nav li:hover > .menu-expand::before {
+        background-color: #146cda !important;
+    }
     .offcanvas-body .navbar-nav li a .sub-menu-icon {
         display: none;
     }
@@ -29,23 +36,83 @@
     }
     /* Dropdown 2 */
     .dropdown-sub-menu {
-        position: inherit;
+        position: static;
         opacity: 1;
         visibility: visible;
         border: none;
+        max-height: 0px;
+        overflow: hidden;
         box-shadow: none;
         transform: none;
         -webkit-transform: none;
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
+        transition: all .6s ease-out !important;
+        -webkit-transition: all .6s ease-out !important;
+        -moz-transition: all .6s ease-out !important;
+        -ms-transition: all .6s ease-out !important;
+        -o-transition: all .6s ease-out !important;
+    }
+    .dropdown-sub-menu.active {
+        max-height: 400px;
     }
     .dropdown-sub-menu li {
         border-bottom: none;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .dropdown-sub-menu li a {
+        padding: 8px 24px 8px 0;
     }
     .dropdown-sub-menu li:hover > a {
         color: #146cda !important;
         padding-left: 0;
+    }
+    .sub-menu-sub {
+        display: none !important;
+    }
+    .sub-menu-sub-line_2 {
+        display: block;
+    }
+    .sub-menu li ul.sub-menu-sub-line_2 {
+        display: inherit;
+        list-style-type: none;
+    }
+    .sub-menu-sub-line_2 li a span {
+        margin: 0 !important;
+        font-weight: 400;
+    }
+    .sub-menu {
+        padding: 0 20px !important;
+        min-width: 0px;
+    }
+    .sub-menu li {
+        margin: 0 !important;
+    }
+    .sub-menu li li a.sub-menu-head span {
+        text-transform: capitalize;
+        cursor: pointer;
+        font-weight: 400;
+        margin: 0 !important;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+    }
+    .sub-menu li li a.sub-menu-head span:hover {
+        padding: 8px 24px 8px 0 !important;
+        color: #146cda;
+    }
+    .images {
+        display: none;
+    }
+    .sub_menu-hiden {
+        display: none !important;
+    }
+    .sub_menu-visible {
+        display: block !important;
     }
 }
 /* ====  ==== */
