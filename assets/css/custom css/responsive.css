@@ -1,12 +1,51 @@
 /* ==== 991px ==== */
 @media (max-width: 991px) {
     /* ==================== header ==================== */
+    /* == top contact == */
+    .top-contact {
+        display: flex !important;
+        justify-content: space-between;
+        border: 1px solid #1d1d1d;
+        align-items: center;
+        padding: 6px 10px;
+    }
+    .top-contact .top-text span {
+        color: #47494a;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .top-contact .top-contact-link .phone p {
+        margin: 0 !important;
+        color: #47494a;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .top-contact .top-contact-link .phone a {
+        color: #47494a;
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 5px;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+    }
+    .top-contact .top-contact-link .phone a:hover {
+        color: #146cda;
+    }
+    /* == navbar == */
+    .container-res {
+        /* justify-content: initial !important; */
+    }
     .offcanvas.offcanvas-start {
         padding: 50px 40px;
     }
     .close-cart {
         margin-bottom: 25px;
     }
+    /* navbar logo */
+    .nav-res {}
     /* offcanvas menu search form */
     .offcanvas-menu-search-form {
         display: block;
@@ -175,6 +214,14 @@
     .offcanvas-social ul li a .fa-brands {
         font-size: 18px;
     }
+    /* contact link */
+    .contact-link {
+        display: none !important;
+    }
+    /* == cart area-1 == */
+    .cart-info {}
+    /* == mobile manu == */
+    .menu {}
 }
 /* ====  ==== */
 @media (max-width: px) {}
